@@ -29,7 +29,7 @@ function exe21() {
                 total++
                 break
             default:
-                alert("Voto inválido!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                alert("Voto inválido")
         }
         alert(`Candidato 1 votos: ${cand1} \n candidato 2 votos: ${cand2} \n candidato 3 votos: ${cand3} \n candidato 4 votos: ${cand4} \n votos nulos: ${nulo} \n votos brancos: ${branco} \n porcentagem de votos nulos sobre o total de votos: ${(nulo/total) * 100} \n porcentagem de votos em branco sobre o total de votos: ${(branco/total) * 100} `)
     }

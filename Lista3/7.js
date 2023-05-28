@@ -19,5 +19,5 @@ function ex7(){
     }
     alert(`Idade > 50 ${idade50}`)
     alert(`Média de altura com 10 <= idade <= 20 ${SomaAltura/contaAltura}`)
-    alert(`Peo < 40 ${peso40/5 * 100}`)
+    alert(`Peso < 40 ${peso40/5 * 100}`)
 }
