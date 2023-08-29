@@ -15,7 +15,7 @@ async function farmacias() {
 
 async function entradaDadosFarmacia() {
     let codigoFar = Number(prompt("Insira o código da farmácia: "))
-    if (farmaciasLista.some(farmacia => farmacia.codigoFar === codigoFar)) {
+    if (farmaciasLista.find(farmacia => farmacia.codigoFar === codigoFar)) {
         console.log("Já existe uma farmácia com esse código, tente novamente.")
         return
     }
@@ -35,7 +35,7 @@ async function entradaDadosFarmacia() {
 async function entradaDadosRemedio() {
     let codigoFar = Number(prompt("Insira o código da farmácia: "))
 
-    if (!farmaciasLista.some(farmacia => farmacia.codigoFar === codigoFar)) {
+    if (!farmaciasLista.find(farmacia => farmacia.codigoFar === codigoFar)) {
         console.log("A farmácia com esse código não existe, tente novamente.");
         return;
     }
