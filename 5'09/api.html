@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="api.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            <label for = "cep">CEP: </label>
+            <input type="text" id="cep">
+        </div>
+        <div>
+            <label for = "logradouro">Logradouro: </label>
+            <input readonly type = "text" id = "logradouro">
+        </div>
+        <div>
+            <label for = "complemento">Complemento: </label>
+            <input readonly type = "text" id = "complemento">
+        </div>
+        <div>
+            <label for = "bairro">Bairro: </label> 
+            <input readonly type = "text" id = "bairro">
+        </div>
+        <div>
+            <label for = "localidade">Localidade: </label>
+            <input readonly type = "text" id = "localidade">
+        </div>
+        <div>
+            <label for = "uf">UF: </label>
+            <input readonly type = "text" id = "uf">
+        </div>
+        <div>
+            <label for = "ibge">IBGE: </label>
+            <input readonly type = "text" id = "ibge">
+        </div>
+        <div>
+            <label for = "gia">Gia: </label>
+            <input readonly type = "text" id = "gia">
+        </div>
+        <div>
+            <label for = "ddd">DDD: </label>
+            <input readonly type = "text" id = "ddd">
+        </div>
+        <div>
+            <label for = "siafi">SIAFI: </label>
+            <input readonly type = "text" id = "siafi">
+        </div>
+        <div>
+            <button type="button" onclick = "buscaCep()">Buscar</button>
+        </div>
+    </form>
+</body>
+</html>
