@@ -1,0 +1,87 @@
+ Faça um programa em JS que guarde em um vetor dados de 5  partidos políticos código, nome, sigla, presidente, nro de políticos
+ Em seguida, guarde em um vetor dados de 5 políticos código do partido, nome do político, qtde de votos na eleição atual (inicie com 0) e cargo que ocupa
+ Não é possível crias dois partidos com o mesmo código
+ Não é possível cadastrar um político de um partido que não exista
+ Ao final, inicie uma votação, faça o cadastro de 10 votos, e atualize a qtde de votos do político. 
+ Não é possível votar em candidato que não exista, votar em um candidato de um partido errado.
+ Finalmente, mostrar os dados do político que teve mais votos. 
+
+let principal = () = {
+let vetPartidos = []
+let vetcandidatos = []
+let opcao
+do {
+    opcao = Number(prompt(`Escolha n 1. Cadastrar Partido n 2. Cadastrar candidato n 3. Votar n 4. Sair`))
+    switch(opcao) {
+        case 1 cadastrarPartido(vetPartidos)
+                break
+        case 2 CadastrarCandidato(vetPartidos, vetcandidatos)
+                break
+        case 3 votar()
+                break
+        case 4 break
+        default alert(Opção Inválida)
+    }
+}
+while (opcao != 4)
+}
+
+CadastrarPartido = () = {
+    let codigoPart = Number(prompt(Insira o código do partido ))
+    let SiglaPart = prompt(Insira a sigla do partido )
+    let NomePart = prompt(Insira o nome do partido )
+
+    while(vetPartidos.some((partido) = partido.codigo == codigoPart)){
+        alert(Código do partido já existe.)
+        codigoPart = Number(prompt(Insira o código do partido ))
+    }
+
+    let partido = {
+        codigo codigoPart,
+        sigla SiglaPart,
+        Nome NomePart
+    }
+
+    vetPartidos.push(partido)
+}
+
+Cadastrarcandidato = () = {
+    let nomeCand = prompt(Insira o nome do candidato )
+    let codigoCand = Number(prompt(Insira o código do candidato ))
+    let PartidoCand = Number(prompt(Insira o código do partido do candidato ))
+    let CargoCand = prompt(Insira o cargo do candidato )
+
+    let partido = vetPartidos.find((partido) = partido.sigla === partidoCandidato);
+     Ou usar desse jeito
+     while (!VetPartidos.some( (item) = item.codigo == candidato.PartidoCand)) {
+          alert(Partido não existe.)
+          candidato.PartidoCand = Number(prompt(Insira o código do partido do candidato ))
+     }
+    if (!partido) {
+        alert(Partido não existe.)
+    }
+    else {
+        let candidato = {
+            nome nomeCand,
+            codigoCand codigoCand,
+            votos = 0
+        }
+    }
+    vetCandidatos.push(candidato);
+}
+
+let votacao = () = {
+    let codigoPartidoVoto = Number(prompt(Insira o código do partido))
+    let nomeCandidato = prompt(Informe nome do candidato )
+
+    let achou = false
+    for (let i = 0; i  vetCandidatos.length; i++) {
+        if (vetCandidatos[i].codigoPart == codigoPartidoVoto && vetCandidatos[i].nome == nomeCand)
+        vetCandidatos[i].voto++
+        alert(Voto completo.)
+        achou = true
+    }
+    if (!achou) {
+        alert(Partido ou candidato não existe.)
+    }
+}
