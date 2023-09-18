@@ -88,6 +88,7 @@ const alguemComMenosDe25 = pessoas.some(pessoa => pessoa.idade < 25);
 // O método fetch é usado para fazer solicitações HTTP e obter dados de um servidor web.
 // Aqui está um exemplo de como fazer uma solicitação GET para uma API fictícia e processar a resposta:
 
+let resposta = await fetch(`http://www.omdbapi.com/?t=${titulo}&apikey=${chave}`)
 
 // PERGUNTAS:
 // O que é um vetor de objetos em JavaScript?
