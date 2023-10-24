@@ -16,7 +16,7 @@
 <body class="bg-custom">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-      <img src="/bootstrap/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+      <img src="logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,22 +39,66 @@
     </div>
   </nav>
 
+  <form class="container" style="margin-left: 20px; margin-top: 20px">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" style="color:white; " class="form-label">Email address</label>
+      <input type="email" style="width: 40%;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text" style="color:white; ">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label" style="color:white; ">Password</label>
+      <input type="password" style="width: 40%;" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" style="margin-left: -18px">
+      <label class="form-check-label" for="exampleCheck1" style="color:white; ">Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary" style="">Submit</button>
+  </form>
+
+  <table class="table" style="margin-top: 50px; background-color: rgb(184, 184, 184);">
+    <thead>
+      <tr>
+        <th scope="col">Cidade</th>
+        <th scope="col">Estado</th>
+        <th scope="col">País</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Franca</th>
+        <td>São Paulo</td>
+        <td>Brasil</td>
+      </tr>
+      <tr>
+        <th scope="row">New York</th>
+        <td>New York</td>
+        <td>United States</td>
+      </tr>
+      <tr>
+        <th scope="row">Vienna</th>
+        <td>Vienna</td>
+        <td>Austria</td>
+      </tr>
+    </tbody>
+  </table>
+
   <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/bootstrap/logo.jpg" width="100" height="300" class="d-block w-100" alt="...">
+        <img src="/logo.jpg" width="100" height="300" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="/bootstrap/logo2.jpg" width="100" height="300" class="d-block w-100" alt="...">
+        <img src="logo2.jpg" width="100" height="300" class="d-block w-100" alt="test">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="visually-hidden" style="color:black">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden" style="color:black">Next</span>
     </button>
   </div>
 
